@@ -11,8 +11,9 @@ interface Users {
   tokenProvider: string;
   settings: object;
   stats: {
+    weightAtStart:number; // before aram do his magic
     weightTotal: number; // co2 of mail box since the created ,
-    lastScannedAt: Date;
+    lastScannedAt: Date; 
     schedule: [
       {
         weightTotalSuppressed: number; // weight mail suppressed
